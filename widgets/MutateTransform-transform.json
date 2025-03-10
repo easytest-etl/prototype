@@ -1,0 +1,70 @@
+{
+  "metadata": {
+    "spec-version": "1.4"
+  },
+  "display-name": "Mutation (Test)",
+  "icon": {
+    "type": "inline",
+    "arguments": {
+      "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAA79JREFUeF7tmkvoTVEUxn9/lJSiDCgmniUGUgoTmWAqyjNSRErKAHmk5FUSieRVKK+UMTMTmZAUiTwmBibKQEkR56t7cx1777POY5/bvfes0e3etdde69tr7fXtve8QAy5DAx4/DQBNBgw4Ak0JDHgCNJtgUwJNCQw4At0ugb0t/E90ax26CcBk4HUr8JnAx26A0E0AHgGLWkHr8+JBAmAtcDMV8DrgVt0gdCMDxgDvgXGpYL8A04CvdYLQDQAuA5s9QV4BtvQzAPOBJxkBLjToVIZRnRkwAniV1PmMDO/fALOBn5VFGTBUJwAHgcPGoKR7xKhbSq0uAKa0Nr48zk4FPuQZUES3LgA6e36nn8eTrBgG7HE4Xws3qAOAjcA1R4BifmKAAkB7g5hhWjT2RpGVtY6JDYB6vXq+en9axPy0ypKlwAOHTnRuEBuA60kdb3AEdgdYk/pe361y6Cp7NllXNK9eTADE89sr3OmXmJ4Yn1a3Uya0DkdjM7Ilb4xB/VgAjGwF46rrbcBFj1f67UJgv/hRafQQ7U5Q/V69PC1igWJ6PtGCPAYWOBRk81AvACCmp11dzK9TxOzE8MT0QiKd5yXG58IoRglolcX506Kev8/onW6IXNwgK4OM5v+qVQ2ATnk67aWl3fOtNTwqwA00x9XckXoGVAmAtedbffdxA18Xsdr9R69KAHSbk+7tmuw2oBugIuLjBrpNWl/EYHpMVQDk7flW36NzgyoACPX8rcAla7QevajcoAoAYu/YIW5wDNhfBuCyAMwCXgDDU05Ye77V92jcoAwAGvsUmOuIovTKOGxGybQyAGwHzlfQ861ZEOIGofNF0H5RAMYnbegdMNphvfOcbw3OqhfiBrpc+Ww11NYrCsA9YKVjMnEBvfDEFB83uAuszjtxEQCWJKe1h46JKmVogUBC3GCZxzevubwAqA7fApMcFvWio5edOsTHDT613h2+W53IC8ApYJfDeOWntIwAQtzgJLA7BgB19Xyr7z5u8AuYk+xRLy2GrBkQ6vlHk2esA5bJIuj4uMEzYF5yg/Q7a04rADuBMzX2/Cy/27+HuMEO4FyWIQsA2vD0V5a6e36W7+3ffdzgW/InjOlZ3MACgFqeWl8vyn1gRcjxLACWAzLSyxLkBiEAlPKiu6K9vSxBbhAC4GzyeqONpB/ktIe/eB9GdMTVUTerRHoFHC838AWo3XNir0Rn9FOloJL+R/plhY0Y/K/WAFAYuj4Z2GRAnyxk4TCaDCgMXZ8MbDKgTxaycBgDnwF/AGWNokE352kSAAAAAElFTkSuQmCC"
+    }
+  },
+  "configuration-groups": [
+    {
+      "label": "Sampling",
+      "properties": [
+        {
+          "name": "sample-size",
+          "label": "Sample size",
+          "widget-type": "number",
+          "widget-attributes": {
+            "default": 10,
+            "min": 1
+          }
+        }
+      ]
+    },
+    {
+      "label": "Mutations",
+      "properties": [
+        {
+          "name": "mutations-dropdown",
+          "label": "Set field name and mutation type",
+          "widget-type": "keyvalue-dropdown",
+          "widget-attributes": {
+            "delimiter": ",",
+            "kv-delimiter": ":",
+            "dropdownOptions": [
+              "Set to null",
+              "Set to zero",
+              "Set to negative",
+              "Set to absolute",
+              "Set to specified value",
+              "Set to large positive value",
+              "Set to large negative value"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Weights",
+      "properties": [
+        {
+          "name": "weight-values",
+          "label": "Mutation weights",
+          "widget-type": "ds-multiplevalues",
+          "widget-attributes": {
+            "delimiter": ",",
+            "values-delimiter": ":",
+            "numValues": "2",
+            "placeholders": [
+              "Field",
+              "Mutation probability"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

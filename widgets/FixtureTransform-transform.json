@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "spec-version": "1.4"
+  },
+  "display-name": "Fixture (Test)",
+  "icon": {
+    "type": "inline",
+    "arguments": {
+      "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAx1JREFUeF7tmkvIT0EUwH/fRnYS8sjKp0QJZeNRnktZKtbYYIWSR4SdR4rUR9khWVGU8sxjg8IKyQLlbWFhy//U3Po33Tv3zL1zX+7M5qvvf+bcc35z5nHOzAg9byM9958mAcwGZpoB+AS8a2Iw6gYwHtgDrAWWWQ4/Bm4BR+oEUSeAUeA6MC/HwRfAeuBjHSDqAjAdeAlMUTr1AVgE/FLKFxarA4B842FKyOcZfQNYlydU9vc6AEg4X0sx9C1wyvx/JyBTxG6rgPtlnXT19wGwGtgHyN8QbQHwyihaAjwJoRS4AOwFvmr0aQFsBcY0Cj1kJgC/jfzEwPP9D7AZuJxnjwbAYuBpnqICvx8EDpt+R010FVDj7DIXeF12ClwCNoa2zOj7DIwDJlWk/yywrSyA78DkigysWq0stHPKAvibouAQ8KBq6z31rwRkWtnNOc01a0AagA3AVU8DqxYXm65EADEC4hSIa4BFIC6CVWyDcReI26DfOUBKYLc9DwJrgDsefVp7Dtg+OOufBs4DklVq2jlgi5GXfprWSgCJ84kDGgiJ80mfHYNc5IyCQOsA2M5rINjO+0BoFYBdwLGMUfsJzAckFR5uM0yFKCs1lrLZSUcktAaAy/kfg8Vw+aC+8CbDEUldHznSb9d0aAUAl/NSo1vhcD5hUhRC4wDynF8KvFcsZiKSB2E3cNzS1SiAkM4PR4IUXaZmQLMhNAZgv+M+T8LeZ+RtX2eZcrkGQi8BHACkoiytMQDy8V5PgSRsQ0Lo3CKohRBiG0zbARqfAsOLV68PQppI+AYsTDkK570hELAnunAUTmzsdTKUBaFX6bANQeN80ue/KYgkDsmjirvKPCARk9ch9zz6NHoQ8rCzMtEIIF6OxtvheD0e3wekLLHxctS178QnMopdufePpL44CpMKfo2KSE1yWtkpcBHY1KgbxT8uT2WdtmvWgKqeyhZ3S99TbH9eNgKkvzw81l5T682rVlKu4nNt1kTAcEYndwCSpbW5PTMvRm9qjPQBoNHXOZkIoHNDFtjgGAGBgXZOXYyAzg1ZYIN7HwH/ACus+UG3v52jAAAAAElFTkSuQmCC"
+    }
+  },
+  "configuration-groups": [
+    {
+      "label": "Fixture Context",
+      "properties": [
+        {
+          "name": "name",
+          "label": "Fixture Name",
+          "widget-type": "textbox",
+          "widget-attributes": {
+            "width": "large"
+          }
+        },
+        {
+          "name": "fixture-values",
+          "label": "Key-value pairs",
+          "widget-type": "ds-multiplevalues",
+          "widget-attributes": {
+            "delimiter": ",",
+            "values-delimiter": ":",
+            "numValues": "2",
+            "placeholders": [
+              "Key",
+              "Value"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Assertion Control",
+      "properties": [
+        {
+          "name": "assertion-control",
+          "label": "Set state for assertions following this fixture",
+          "widget-type": "keyvalue-dropdown",
+          "widget-attributes": {
+            "delimiter": ",",
+            "kv-delimiter": ":",
+            "dropdownOptions": [
+              "enabled",
+              "disabled"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

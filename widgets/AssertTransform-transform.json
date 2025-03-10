@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "spec-version": "1.4"
+  },
+  "display-name": "Assertion (Test)",
+  "icon": {
+    "type": "inline",
+    "arguments": {
+      "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAA/VJREFUeF7tmtvLDlEUxn9OOYSUQ/wF5MoNyvlcSHImkcidK8WtP8ClOzklySnkLBKRSzlErpQLSc5u5BTzaG+NsffMnnnVt2feWfXVV7PXvOt51tprr7X29KLLpVeX46cloI2ALmeg3QJdHgBtEmy3QLsFms3ALOBmHsSmbgHhOgRsADYBh30kNJEAYToKrDWgf+aR0DQCsuCt470kNI0AhbrC3iUPgAnZB00hwOd5i/cxMB14XxcCBgM7gF2Bh9QRYH2O52e7wGt9jBEg8DeAicnfRWAZ8M0Drg8g8DbhZZd5PW8X+ggYD4wKZL/KMhn22qE4BLgOTEo9uwAs8fyIsv06z7NHwEyf54sIOAmsrIIsUGc1oN9IS9rz2ddcMyR8MQ/keekrOlxS6Pm6ESB7VdEtAr4WgL8PzCnyfBEBx4A1gd6ssmwVcMqhqCi4ZDK26723gZeAIsgl94C5wIdQo3w5oCe2gLV5oCFBdXwZkee15z+VUYqRANnfH7iShH0oCZXA64diPAatA0XCeWB+gUcrg4+dANnXDzgDLPaQ0BH4OhAgG/smNfxZBwkdg68LAZaEE6lz/7+ArxMBstWWveOqZHtfHok5CfpsHlr2qMtLonUkoMwxX7i2JaCQop5ZMBbYByz3dI0+q9QDbC9oof/SjTECBP4OMCLp858CU4F3AX4QeM0PBiQ66h5VO/jmCH9eFxsBafDWSPX1KonzSEiDt3pBJMREwJgkdDW4HOnw9kNDwj8zPdM5XgXURGXlNLCiTqfAfmCzx2C1uvL0x9TzaYDAD3LoaG6w1DRVXg5iigBbmCn5hZAw2cwOK4OPuRLMm/IqEnaa/kADFJcsLPK8VYotAqxdvc19nm/U7Qvp72bPnws4NX4viXUgIttEwvESw9nS4GMnQPapAdJ8smhC/cMUTcGeL9oCYt43eAyNrrx1vqGoT0eZfkHOC7cAB6oYFvMWsHimmKPOl/C0rvJ8IHYCVAFqTO4qcrIOL3UfULQFeupqLA1qnhmKqrYPFVWMuhd4E6oQ6zGoc1ye98ktMxVyPX9iKsZXISTESIC6OE2CNRHOio46JWdl+7xb4WeAckchCbERoMtODT81Cc6KWls9V8srsR9CbfR4WiTMAF7kRUJMBIw2934+e3UxetnxcG8CcqtHSd8ZKCd4JSYCZKQ8rHtJFUBWdCWu7wPU3/vERcJzM0ypTQRYcGkSPpsr8dyPHY3iniT7bzP/B4G3+ygvQnrqmUg4aMDfLWHEbkBVpsZouZ6374xtC6SxDitzz59SHA68DSUtZgJCMXS0riWgI/oaoNxGQAOc2BGENgI6oq8Bym0ENMCJHUHo+gj4BXc/ukGDks42AAAAAElFTkSuQmCC"
+    }
+  },
+  "configuration-groups": [
+    {
+      "label": "Assertion Rule",
+      "properties": [
+        {
+          "name": "description",
+          "label": "Rule Description",
+          "widget-type": "textbox",
+          "widget-attributes": {
+            "width": "large"
+          }
+        },
+        {
+          "name": "expression",
+          "label": "Expression",
+          "widget-type": "textarea"
+        }
+      ]
+    }
+  ]
+}
